@@ -1,0 +1,15 @@
+Roger Baptiste
+
+Stack: MERN
+
+https://github.com/rogerbaptiste/trezo_project
+
+Trezo - Budget Calculator
+
+This is particularly created to help people budget their monthly spending while also educating them on a few good economical habits.
+
+MUST HAVE 
+
+CRUD
+Backend and front end Validators for data fields
+Will be using Bootstrap/CSS 
