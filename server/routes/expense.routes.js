@@ -1,10 +1,10 @@
-const StoreController = require('../controllers/store.controller');
+const ExpenseController = require('../controllers/expense.controller');
 
 module.exports = app => {
-    app.get('/', ExpenseController.findAllStores);
-    app.get('/api/expenses/:id', ExpenseController.findOneStore);
-    app.post('/', ExpenseController.createStore);
-    // app.put('/api/stores/:id', ExpenseController.updateStore);
-    app.patch('/api/stores/:id', ExpenseController.updateStore);
-    app.delete('/api/stores/:id', ExpenseController.deleteStore);
+    app.get('/', ExpenseController.findAllExpenses);
+    app.get('/api/expenses/:id', ExpenseController.findOneExpense);
+    app.post('/', ExpenseController.createExpense);
+    app.put('/api/expense/:id', ExpenseController.updateExpense);
+    app.patch('/api/expenses/:id', ExpenseController.updateExpense);
+    app.delete('/api/expenses/:id', ExpenseController.deleteExpense);
 };
