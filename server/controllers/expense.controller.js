@@ -16,6 +16,7 @@ module.exports.findOneExpense = (req, res) => {
 
 // CREATE STORE
 module.exports.createExpense = (req, res) => {
+    console.log(req.body)
     Expense.create(req.body)
         .then(newExpense => res.json({ expense: newExpense }))
         .catch(err => res.json({ message: "Something went wrong", error: err }));

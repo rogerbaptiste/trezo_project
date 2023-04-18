@@ -1,5 +1,5 @@
-// import React from "react";
-// import 'boxicons'
+import React from "react";
+import 'boxicons'
 
 // const obj = [
 //     {
@@ -50,25 +50,25 @@
 
 // ]
 
-// const Transaction = ({ category }) => {
+const Transaction = ({ category }) => {
 
-//     if (!category) return null;
-//     return (
-//         <div style={{borderRight: `8px solid ${category.color ?? "#e5e5e5"}`}}>
-//             <button className="px-3"><box-icon color ={category.color ?? "#e5e5e5"} name="trash"/></button>
-//             <h1>{category.name??''}</h1>
-//         </div>
-//     )
-// }
+    if (!category) return null;
+    return (
+        <div style={{borderRight: `8px solid ${category.color ?? "#e5e5e5"}`}}>
+            <button className="px-3"><box-icon color ={category.color ?? "#e5e5e5"} name="trash"/></button>
+            <h1>{category.name??''}</h1>
+        </div>
+    )
+}
 
-// const ExpenseList = () => {
-//     return (
-//         <div className='flex flex-col py-6 gap-3'>
-//             <h1>List of Expenses</h1>
-//             {obj.map((expense, amount) => <Transaction key ={amount} category={expense} />)}
-           
-//         </div>
-//     )
-// }
+const ExpenseList = () => {
+    return (
+        <div className='flex flex-col py-6 gap-3'>
+            <h1>List of Expenses</h1>
+            {/* {obj.map((expense, amount) => <Transaction key ={amount} category={expense} />)}
+            */}
+        </div>
+    )
+}
 
-// export default ExpenseList
+export default ExpenseList

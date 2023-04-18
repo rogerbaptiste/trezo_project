@@ -4,7 +4,10 @@ const port = 8000;
 const cors = require('cors');
 
 require('./config/mongoose.config');
-app.use(cors());
+app.use(cors({
+    origin:'http://localhost:3000', credentials:true
+})
+);
 app.use(express.json(), express.urlencoded({ extended: true }));
 
 require('./routes/expense.routes')(app);

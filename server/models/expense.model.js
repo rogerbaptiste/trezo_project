@@ -6,7 +6,7 @@ const ExpenseSchema = new mongoose.Schema({
     name: {
         type: String,
         required: [true, "Expense is required"],
-        minlength: [3, "Expense must be at least 3 characters long"]
+        minlength: [1, "Expense must be at least 1 characters long"]
     },
     type: {
         type: String, default: "Investment"
@@ -14,12 +14,6 @@ const ExpenseSchema = new mongoose.Schema({
     amount: {
         type: Number
     }
-
-    // activeInactive: {
-    //     type: String,
-    //     enum: ["True", "False"],
-    //     default: "True"
-    // },
 
 },
     { timestamps: true });
