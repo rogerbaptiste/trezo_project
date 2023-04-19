@@ -4,7 +4,6 @@ import './App.css';
 import { useEffect } from 'react';
 import { Routes, Route, BrowserRouter} from 'react-router-dom';
 // import NavBar from './components/NavBar';
-import Graph from './components/Graph';
 import ExpenseForm from './components/ExpenseForm'
 import Categories from './components/Categories';
 import Dashboard from './components/Dashboard';
@@ -31,9 +30,9 @@ function App() {
 
       {/* Class creates columns  */}
       <div className='grid md:grid-cols-2 gap-4'>
-      {/* <Chart/> */}
+      
       {/* <Categories/> */}
-      <Graph/>
+      {/* <Graph/> */}
       {/* <ExpenseForm/>
       */}
       

@@ -48,12 +48,9 @@
 }
 
 .chart .title {
-  position: absolute;
-  left: 0px;
-  right: 575px;
-  top: 400px;
-  margin-left: auto;
-  margin-right: auto;
+  
+ width: max-content;
+
 }
 
 .legend {
@@ -90,4 +87,7 @@
 
 .submitbtn {
   width: 275px;
+}
+.format {
+ width: max-content;
 }

@@ -31,25 +31,6 @@ const EditExpense = (props) => {
         })
     }
 
-    // setOneExpense({
-
-    //     name: "",
-    //     type: "Investment",
-    //     amount: ""
-    // }
-    // )
-    // setTrigger(true)
-    // navigate(`/`)
-
-    // useEffect(() => {
-    //     axios.get(`http://localhost:8000/api/expenses/${id}`)
-    //         .then((res) => (
-    //             setOneExpense(res.data.expenses)),
-    //             console.log('returning api', oneExpense))
-    //         .catch(err => console.log(err))
-    // }, [trigger])
-
-
     const editExpense = (e) => {
         e.preventDefault();
         axios.patch(`http://localhost:8000/api/expenses/${id}`, oneExpense)
