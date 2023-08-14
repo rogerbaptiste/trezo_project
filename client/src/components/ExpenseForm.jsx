@@ -187,7 +187,7 @@ const ExpenseForm = () => {
                                 <option value="Car Payment">Car Payment</option>
                                 <option value="Savings">Savings</option>
                                 <option value="Insurance">Insurance</option>
-                                <option value="Investment">Investmenttt</option>
+                                <option value="Investment">Investment</option>
                                 <option value="Credit Card">Credit Card</option>
                                 <option value="Other">Other</option>
                             </select>
